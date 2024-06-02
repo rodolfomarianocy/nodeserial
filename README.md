@@ -5,7 +5,7 @@ Per CVE-2017-5941, the vulnerability occurs when untrusted data is passed to a s
 Note that this affects the node-serialize 0.0.4 package for Node.js.
 This tool was made to automate this process, generating a payload for reverse shell, have fun exploring nodejs deserialization in vulnerable applications.
 
-ode-serialize package 0.0.4
+node-serialize package 0.0.4
 ![image](https://user-images.githubusercontent.com/54555784/229000366-0c318500-bd10-47c1-ab07-d72f8aadd9e9.png)
 
 ```
